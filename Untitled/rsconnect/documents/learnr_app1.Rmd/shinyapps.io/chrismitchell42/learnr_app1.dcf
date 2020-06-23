@@ -5,8 +5,8 @@ account: chrismitchell42
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 2492204
-bundleId: 3305690
+bundleId: 3305867
 url: https://chrismitchell42.shinyapps.io/learnr_app1/
-when: 1592904698.21065
+when: 1592907564.51764
 asMultiple: FALSE
 asStatic: FALSE
