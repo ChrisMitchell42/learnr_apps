@@ -1,0 +1,38 @@
+---
+output: 
+  html_document:
+    includes:
+      in_header: test1.html
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+require(ctv)
+require(tidyverse)
+require(BiocManager)
+require(ggtree)
+require(ggimage)
+require(phylobase)
+knitr::opts_chunk$set(echo = FALSE)
+#knitr::opts_knit$set(root.dir = '~/Google Drive/University of Liverpool/CRG19:20/Comparative Methods Course/Intro to R and Trees')
+tree <- read.tree("tree_newick.nwk")
+```
+
+
+## Plotting a phylogeny with ggtree
+
+We'll start by using ggtree to plot our tree. This is the base layer of the plot. Many additional arguments can be added to this command to customise the plot.
+
+```{r tree-plot, exercise=TRUE, exercise.eval = TRUE}
+ggtree(tree)
+```
+```{r tree-plot-solution}
+ggtree(tree, colour = "blue")
+```
+<div id="tree-plot-hint">
+**Hint:** You may want to change the colour or size of the branches.
+</div>
+
+
+<div data-iframe-height></div>
